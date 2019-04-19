@@ -41,4 +41,7 @@ export default function() {
       };
     }
   });
+
+  this.get('/artists/:id')
+  this.get('/artists');
 }
