@@ -42,6 +42,9 @@ export default function() {
     }
   });
 
-  this.get('/artists/:id')
+  this.get('/artists/:id');
   this.get('/artists');
+
+  this.get('/albums');
+  this.get('/albums/:id');
 }

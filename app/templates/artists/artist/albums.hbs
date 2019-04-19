@@ -1,0 +1,12 @@
+{{#each this.model as |album|}}
+  <p>
+    Title: {{album.artist.name}}:
+    {{#link-to "artists.artist.albums.album" album.artist.id album.id}}
+      {{album.title}}
+    {{/link-to}}
+  </p>
+  <p>Year: {{album.year}}</p>
+  <p>Label: {{album.label}}</p>
+{{/each}}
+
+{{outlet}}

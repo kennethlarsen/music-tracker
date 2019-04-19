@@ -1,1 +1,4 @@
 <h2>{{this.model.name}}</h2>
+
+{{#link-to "artists.artist.albums" this.model.id}}See all albums{{/link-to}}
+{{outlet}}
