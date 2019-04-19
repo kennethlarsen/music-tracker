@@ -1,0 +1,23 @@
+.menu {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  height: 3rem;
+  border-radius: 5px;
+
+  a {
+    color: $white;
+  }
+
+  a:visited {
+    color: $white;
+  }
+}
+
+.menu__item {
+  justify-content: center;
+}
+
+.menu__items {
+  list-style: none;
+}

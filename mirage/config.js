@@ -33,7 +33,6 @@ export default function() {
   }
 
   this.post('/token', function(db, request) {
-    console.log(request.requestBody);
     var params = formEncodedToJson(request.requestBody);
     if(params.username === "test@email.com" && params.password === "secret") {
       return {
