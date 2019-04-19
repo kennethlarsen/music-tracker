@@ -1,10 +1,14 @@
 <div class="menu">
-  …
-  {{#if session.isAuthenticated}}
-    <a {{action 'invalidateSession'}}>Logout</a>
-  {{else}}
-    {{#link-to 'login'}}Login{{/link-to}}
-  {{/if}}
+  <ul class="menu__items">
+    <li class="menu__item">
+      {{#if session.isAuthenticated}}
+        <button {{action "invalidateSession"}}>Logout</button>
+      {{else}}
+        {{#link-to "login"}}Login{{/link-to}}
+      {{/if}}
+    </li>
+  </ul>
+  
 </div>
 <div class="main">
   {{outlet}}
