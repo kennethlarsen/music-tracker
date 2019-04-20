@@ -1,0 +1,42 @@
+.menu {
+  background-color: $black;
+  color: $white;
+  display: flex;
+  height: 3rem;
+  border-radius: 5px;
+
+  a {
+    color: $white;
+  }
+
+  a:visited {
+    color: $white;
+  }
+}
+
+.menu__item {
+  justify-content: center;
+}
+
+.menu__items {
+  list-style: none;
+}
+
+.btn {
+  background-color: $black;
+  color: $white;
+  border-radius: 5px;
+  width: 5rem;
+  height: 2rem;
+  font-size: 1rem;
+}
+
+.bnt:focus {
+  outline: 4px solid #80b3ff;
+  outline-offset: 2px;
+}
+
+.btn--white {
+  background-color: $white !important;
+  color: $black !important;
+}
