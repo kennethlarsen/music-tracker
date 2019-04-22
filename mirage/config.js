@@ -47,4 +47,8 @@ export default function() {
 
   this.get('/albums');
   this.get('/albums/:id');
+
+  this.get('/users');
+  this.get('/users/:id');
+  this.get('/users/:id/collections');
 }
